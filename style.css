@@ -1,0 +1,117 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Poppins:wght@500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&display=swap');
+  *{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+  }
+  body{
+    background: #FFF;
+  }
+  header{
+    padding: 50px 120px;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-primary{
+    display: inline-flex;
+    padding: 0px 24px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 41px;
+    background: #E02C6D;
+    font-size: 1rem;
+    color: #FFF;
+    margin-top: 20px;
+    border: none;
+  }
+  .header-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3A3A3A;
+  }
+  nav > ul{
+    display: flex;  
+  }
+  nav li,img{
+    list-style: none;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 20px;
+  }
+  nav li a{
+    text-decoration: none;
+    color: #3A3A3A;
+  }
+  #nav-search{
+    width: 24px;
+    height: 24px;
+  }
+  #nav-cart{
+    width: 36px;
+    height: 36px;
+  }
+  .banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner-content{
+    width: 582px;
+    height: 270px;
+  }
+  .banner-title{
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: #3A3A3A;
+    line-height: 70px;
+  }
+  .banner-text{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3A3A3A;
+  }
+  .banner-img{
+    background-image: url("images/circle\ design.svg");
+    background-repeat: no-repeat;
+  }
+  .banner-img img{
+    padding-bottom: 20px;
+  }
+  .sponsors{
+    padding: 100px 170px;
+  }
+  .sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+  }
+
+  /* responsive */
+  @media screen and (max-width:675px) {
+    header{
+        padding: 0px 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 1.75rem;
+    }
+    .sponsors-img-container{
+        
+    }
+  }
